@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/sushibars
+
+###
+GET http://localhost:3000/sushibars/5ffcf39f4350053c94702c2a
+
+
+###
+POST http://localhost:3000/api/sushibars
+Content-Type: application/json
+
+{
+    "name": "reyadh",
+    "location": "NY",
+    "menu" : "Sushi",
+    "features": "A/C, Reservations, Buffet"
+}
+
+###
+DELETE http://localhost:3000/api/sushibars/5ffd2f8d36a1d960b4e44428
+
+###
+PATCH  http://localhost:3000/sushibars/5ffcfe2636a1d960b4e44425
+Content-Type: application/json
+
+{
+    "name": "Watami",
+    "location": "Cape Girardeau",
+    "menu" : "Sushi",
+    "features": "A/C"
+}
