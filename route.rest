@@ -1,11 +1,10 @@
-GET http://localhost:3000/api/sushibars
+GET http://localhost:5000/api/users
+###
+GET http://localhost:5000/api/sushibars/5ffcfe2636a1d960b4e44425
+
 
 ###
-GET http://localhost:3000/sushibars/5ffcf39f4350053c94702c2a
-
-
-###
-POST http://localhost:3000/api/sushibars
+POST http://localhost:5000/api/sushibars
 Content-Type: application/json
 
 {
@@ -16,10 +15,10 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/sushibars/5ffd2f8d36a1d960b4e44428
+DELETE http://localhost:5000/api/sushibars/5ffd2f8d36a1d960b4e44428
 
 ###
-PATCH  http://localhost:3000/sushibars/5ffcfe2636a1d960b4e44425
+PATCH  http://localhost:5000/api/sushibars/5ffcfe2636a1d960b4e44425
 Content-Type: application/json
 
 {
@@ -28,3 +27,32 @@ Content-Type: application/json
     "menu" : "Sushi",
     "features": "A/C"
 }
+
+###
+
+POST http://localhost:5000/api/ratings
+Content-Type: application/json
+
+{
+    "name": "testUser",
+    "email": "test@gmail.com",
+    "password" : "test123"
+}
+
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "GlennSenevi",
+    "email": "glenn@gmail.com",
+    "password": "12345"
+}
+
+###
+
+GET http://localhost:5000/api/users/
+
+
+###
+Token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMGM5ZmZlMmE0MGM2ZDE1NGRkY2EzZiIsImlhdCI6MTYxMTQ0MDEyNiwiZXhwIjoxNjExNDQzNzI2fQ.nIt68dYjcNFB_OzfOduwj-RCf2ej11AeKeyBgS7bz6A

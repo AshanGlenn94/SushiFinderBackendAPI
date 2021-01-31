@@ -1,15 +1,11 @@
 const mongoose = require("mongoose");
 
-const sushibarSchema = new mongoose.Schema({
-  title: {
+const ratingSchema = new mongoose.Schema({
+  name: {
     type: String,
     required: true,
   },
-  price: {
-    type: Number,
-    required: true,
-  },
-  image: {
+  email: {
     type: String,
     required: true,
   },
@@ -21,6 +17,10 @@ const sushibarSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  comment: {
+    type: String,
+    required: true,
+  },
   dateAdded: {
     type: Date,
     required: true,
@@ -28,4 +28,4 @@ const sushibarSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Sushibar", sushibarSchema);
+module.exports = mongoose.model("Rating", ratingSchema);
